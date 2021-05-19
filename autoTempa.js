@@ -53,9 +53,30 @@ maka senjata tidak bisa ditempa lagi dan memberikan pesan "SELAMAT SENJATA ANDA 
 
 
 function autoTempa(jumlahTempa){
-    // buat kodemu disini
-    
+    let varTempa = Math.floor(Math.random() * 100)
+    let varLevel = 0
+    if(varLevel == 0){
+        if(varTempa <= 100 && varTempa >= 11 ){
+            varLevel += 1
+            console.log(`SUKSES, pedang anda sekarang + ${varLevel}`);
+        }
 }
+    if(varLevel == 1){
+        if(varTempa <= 100 && varTempa >= 21 ){
+            varLevel += 1
+            console.log(`SUKSES, pedang anda sekarang + ${varLevel}`);
+        }
+    }
+    else{
+        if (varLevel > 0) {
+            varLevel -= 1
+        }else{ 
+        console.log(`GAGAL, pedang anda sekarang + ${varLevel}`);
+        }
+    }
+    console.log(varLevel);
+    console.log(varTempa);
 
-
-autoTempa(10);
+    for(let i = 0; i )
+}
+console.log(autoTempa(10));
